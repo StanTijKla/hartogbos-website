@@ -45,13 +45,13 @@
   </head>
   <body>
     <!-- Netlify Forms detectie: verborgen statische formulieren -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="text" name="naam" />
       <input type="tel" name="telefoon" />
       <textarea name="bericht"></textarea>
     </form>
 
-    <form name="offerte" netlify netlify-honeypot="bot-field" hidden>
+    <form name="offerte" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="text" name="naam" />
       <input type="tel" name="telefoon" />
       <textarea name="omschrijving"></textarea>
