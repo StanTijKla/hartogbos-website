@@ -701,7 +701,24 @@ function ProjectenPage({ nav }) {
 function ContactPage() {
   const [form, setForm] = useState({naam:"",tel:"",bericht:""});
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
   const f = k=>({value:form[k], onChange:e=>setForm({...form,[k]:e.target.value})});
+
+  const handleSubmit = () => {
+    if (!form.naam || !form.tel) return;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        "form-name": "contact",
+        naam: form.naam,
+        telefoon: form.tel,
+        bericht: form.bericht,
+      }).toString(),
+    })
+    .then(() => setSent(true))
+    .catch(() => setError(true));
+  };
   return (
     <>
       <section style={{ background:`linear-gradient(160deg, ${C.navyDk} 0%, ${C.navy} 60%, ${C.navyMid} 100%)`, padding:"80px 32px 64px", width:"100%" }} className="page-hero">
@@ -740,7 +757,8 @@ function ContactPage() {
                 <FormField label="Naam" placeholder="Uw volledige naam" {...f("naam")}/>
                 <FormField label="Telefoonnummer" type="tel" placeholder="Uw telefoonnummer" {...f("tel")}/>
                 <FormField label="Bericht" rows={5} placeholder="Hoe kunnen wij u helpen?" {...f("bericht")}/>
-                <Btn onClick={()=>setSent(true)} variant="primary" full>Verstuur bericht <ArrowRight size={15}/></Btn>
+                {error && <p style={{color:"red",fontSize:13,marginBottom:12,fontFamily:FB}}>Er ging iets mis. Probeer het opnieuw of bel ons direct.</p>}
+                <Btn onClick={handleSubmit} variant="primary" full>Verstuur bericht <ArrowRight size={15}/></Btn>
               </>
             )}
           </div>
@@ -754,7 +772,24 @@ function ContactPage() {
 function OffertePage() {
   const [form, setForm] = useState({naam:"",tel:"",bericht:""});
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
   const f = k=>({value:form[k], onChange:e=>setForm({...form,[k]:e.target.value})});
+
+  const handleSubmit = () => {
+    if (!form.naam || !form.tel) return;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        "form-name": "offerte",
+        naam: form.naam,
+        telefoon: form.tel,
+        omschrijving: form.bericht,
+      }).toString(),
+    })
+    .then(() => setSent(true))
+    .catch(() => setError(true));
+  };
   return (
     <>
       <section style={{ background:`linear-gradient(160deg, ${C.navyDk} 0%, ${C.navy} 60%, ${C.navyMid} 100%)`, padding:"80px 32px 64px", width:"100%" }} className="page-hero">
@@ -794,7 +829,8 @@ function OffertePage() {
                 <FormField label="Naam" placeholder="Uw volledige naam" {...f("naam")}/>
                 <FormField label="Telefoonnummer" type="tel" placeholder="Uw telefoonnummer" {...f("tel")}/>
                 <FormField label="Omschrijving" rows={5} placeholder="Wat mag wij voor u berekenen?" {...f("bericht")}/>
-                <Btn onClick={()=>setSent(true)} variant="primary" full>Offerte aanvragen <ArrowRight size={15}/></Btn>
+                {error && <p style={{color:"red",fontSize:13,marginBottom:12,fontFamily:FB}}>Er ging iets mis. Probeer het opnieuw of bel ons direct.</p>}
+                <Btn onClick={handleSubmit} variant="primary" full>Offerte aanvragen <ArrowRight size={15}/></Btn>
               </>
             )}
           </div>
