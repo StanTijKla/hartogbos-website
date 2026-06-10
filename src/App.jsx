@@ -16,140 +16,6 @@ const FB = "Calibri,'Gill Sans',Arial,sans-serif";
 const PAGES = ["home","diensten","over-ons","projecten","contact","offerte"];
 
 /* ── SVG Illustrations ── */
-const IlluBadkamer = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <rect x="30" y="30" width="220" height="120" rx="4" fill="#1a3555" stroke={C.navyMid} strokeWidth="1"/>
-    <rect x="50" y="90" width="180" height="50" rx="20" fill={C.navy} stroke={C.navyMid} strokeWidth="1.5"/>
-    <circle cx="80" cy="115" r="14" fill={C.navyMid} opacity="0.6"/>
-    <rect x="100" y="108" width="100" height="14" rx="7" fill={C.navyMid} opacity="0.3"/>
-    <rect x="115" y="50" width="50" height="30" rx="3" fill={C.navyMid} opacity="0.4"/>
-    <circle cx="140" cy="65" r="8" fill={C.green} opacity="0.7"/>
-    <line x1="140" y1="45" x2="140" y2="30" stroke={C.navyMid} strokeWidth="2"/>
-    <circle cx="140" cy="28" r="4" fill={C.navyMid}/>
-    <rect x="60" y="50" width="40" height="30" rx="3" fill={C.navyMid} opacity="0.3"/>
-    <rect x="180" y="50" width="40" height="30" rx="3" fill={C.navyMid} opacity="0.3"/>
-    <text x="140" y="170" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">Badkamer renovatie</text>
-  </svg>
-);
-
-const IlluWarmtepomp = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <rect x="80" y="30" width="120" height="100" rx="8" fill={C.navy} stroke={C.navyMid} strokeWidth="1.5"/>
-    <circle cx="140" cy="80" r="35" fill="none" stroke={C.navyMid} strokeWidth="2" strokeDasharray="4 3"/>
-    <circle cx="140" cy="80" r="22" fill={C.navyMid} opacity="0.3"/>
-    <circle cx="140" cy="80" r="10" fill={C.green} opacity="0.8"/>
-    <path d="M120 50 Q140 35 160 50" stroke={C.green} strokeWidth="2" fill="none" opacity="0.6"/>
-    <path d="M115 55 Q140 38 165 55" stroke={C.green} strokeWidth="1.5" fill="none" opacity="0.4"/>
-    <rect x="100" y="138" width="80" height="8" rx="4" fill={C.navyMid} opacity="0.4"/>
-    <rect x="50" y="146" width="180" height="10" rx="2" fill={C.navy} stroke={C.navyMid} strokeWidth="1"/>
-    <text x="140" y="170" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">Warmtepomp installatie</text>
-  </svg>
-);
-
-const IlluAirco = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <rect x="40" y="50" width="200" height="70" rx="10" fill={C.navy} stroke={C.navyMid} strokeWidth="1.5"/>
-    <rect x="50" y="60" width="180" height="50" rx="6" fill="#1a3555"/>
-    <rect x="55" y="85" width="140" height="4" rx="2" fill={C.navyMid} opacity="0.5"/>
-    <rect x="55" y="75" width="100" height="4" rx="2" fill={C.navyMid} opacity="0.3"/>
-    <rect x="55" y="95" width="120" height="4" rx="2" fill={C.navyMid} opacity="0.3"/>
-    <circle cx="210" cy="80" r="12" fill={C.green} opacity="0.7"/>
-    <path d="M90 128 Q90 148 80 158" stroke={C.navyMid} strokeWidth="2" fill="none" opacity="0.5"/>
-    <path d="M120 128 Q120 148 120 158" stroke={C.navyMid} strokeWidth="2" fill="none" opacity="0.5"/>
-    <path d="M150 128 Q150 148 160 158" stroke={C.navyMid} strokeWidth="2" fill="none" opacity="0.5"/>
-    <text x="140" y="170" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">Airconditioning</text>
-  </svg>
-);
-
-const IlluNieuwbouw = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <rect x="30" y="80" width="220" height="80" rx="2" fill={C.navy} stroke={C.navyMid} strokeWidth="1"/>
-    <polygon points="30,80 140,20 250,80" fill="#1a3555" stroke={C.navyMid} strokeWidth="1.5"/>
-    <rect x="110" y="110" width="60" height="50" rx="2" fill={C.navyMid} opacity="0.4"/>
-    <rect x="55" y="100" width="35" height="30" rx="2" fill={C.navyMid} opacity="0.3"/>
-    <rect x="190" y="100" width="35" height="30" rx="2" fill={C.navyMid} opacity="0.3"/>
-    <circle cx="140" cy="52" r="8" fill={C.green} opacity="0.8"/>
-    <line x1="60" y1="160" x2="220" y2="160" stroke={C.navyMid} strokeWidth="2" opacity="0.5"/>
-    <text x="140" y="173" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">Nieuwbouw installaties</text>
-  </svg>
-);
-
-const IlluCV = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <rect x="90" y="30" width="100" height="110" rx="6" fill={C.navy} stroke={C.navyMid} strokeWidth="1.5"/>
-    <rect x="100" y="40" width="80" height="60" rx="4" fill="#1a3555"/>
-    <circle cx="140" cy="70" r="18" fill="none" stroke={C.green} strokeWidth="2" opacity="0.7"/>
-    <circle cx="140" cy="70" r="10" fill={C.green} opacity="0.5"/>
-    <rect x="105" y="108" width="70" height="8" rx="4" fill={C.navyMid} opacity="0.4"/>
-    <rect x="120" y="122" width="40" height="6" rx="3" fill={C.navyMid} opacity="0.3"/>
-    <path d="M90 100 Q60 100 60 130 Q60 160 90 160" stroke={C.navyMid} strokeWidth="2.5" fill="none"/>
-    <path d="M190 100 Q220 100 220 130 Q220 160 190 160" stroke={C.navyMid} strokeWidth="2.5" fill="none"/>
-    <text x="140" y="174" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">CV-installatie</text>
-  </svg>
-);
-
-const IlluZonnepanelen = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <circle cx="140" cy="55" r="28" fill="none" stroke="#f0c040" strokeWidth="2" opacity="0.5"/>
-    <circle cx="140" cy="55" r="16" fill="#f0c040" opacity="0.7"/>
-    {[0,45,90,135,180,225,270,315].map((a,i)=>(
-      <line key={i} x1={140+Math.cos(a*Math.PI/180)*20} y1={55+Math.sin(a*Math.PI/180)*20}
-        x2={140+Math.cos(a*Math.PI/180)*30} y2={55+Math.sin(a*Math.PI/180)*30}
-        stroke="#f0c040" strokeWidth="2" opacity="0.5"/>
-    ))}
-    <rect x="30" y="100" width="220" height="10" rx="2" fill={C.navyMid} opacity="0.3"/>
-    {[0,1,2,3,4].map(i=>(
-      <rect key={i} x={30+i*46} y="110" width="40" height="30" rx="2" fill={C.navy} stroke={C.navyMid} strokeWidth="1" opacity="0.8"/>
-    ))}
-    {[0,1,2,3,4].map(i=>(
-      <line key={i} x1={50+i*46} y1="110" x2={50+i*46} y2="140" stroke={C.navyMid} strokeWidth="1" opacity="0.4"/>
-    ))}
-    <text x="140" y="170" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">Zonnepanelen</text>
-  </svg>
-);
-
-const IlluVentilatie = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <rect x="80" y="50" width="120" height="80" rx="8" fill={C.navy} stroke={C.navyMid} strokeWidth="1.5"/>
-    <circle cx="140" cy="90" r="28" fill="none" stroke={C.navyMid} strokeWidth="1.5" strokeDasharray="3 2"/>
-    {[0,72,144,216,288].map((a,i)=>(
-      <path key={i}
-        d={`M${140+Math.cos(a*Math.PI/180)*12} ${90+Math.sin(a*Math.PI/180)*12} Q${140+Math.cos((a+36)*Math.PI/180)*24} ${90+Math.sin((a+36)*Math.PI/180)*24} ${140+Math.cos((a+72)*Math.PI/180)*12} ${90+Math.sin((a+72)*Math.PI/180)*12}`}
-        fill={C.navyMid} opacity="0.5"/>
-    ))}
-    <circle cx="140" cy="90" r="6" fill={C.green} opacity="0.8"/>
-    <path d="M50 70 Q65 70 65 90 Q65 110 50 110" stroke={C.green} strokeWidth="2" fill="none" opacity="0.5" strokeLinecap="round"/>
-    <path d="M230 70 Q215 70 215 90 Q215 110 230 110" stroke={C.green} strokeWidth="2" fill="none" opacity="0.5" strokeLinecap="round"/>
-    <text x="140" y="170" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">Ventilatiesystemen</text>
-  </svg>
-);
-
-const IlluRenovatie = () => (
-  <svg viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width:"100%",height:"100%"}}>
-    <rect width="280" height="180" fill={C.navyDk}/>
-    <rect x="40" y="60" width="200" height="90" rx="4" fill={C.navy} stroke={C.navyMid} strokeWidth="1"/>
-    <rect x="40" y="60" width="200" height="12" rx="2" fill={C.navyMid} opacity="0.4"/>
-    <line x1="140" y1="72" x2="140" y2="150" stroke={C.navyMid} strokeWidth="1" opacity="0.4"/>
-    {[0,1,2,3].map(i=>(
-      <rect key={i} x={55+i*50} y="85" width="30" height="20" rx="2" fill={C.navyMid} opacity="0.3"/>
-    ))}
-    {[0,1,2,3].map(i=>(
-      <rect key={i} x={55+i*50} y="115" width="30" height="20" rx="2" fill={C.navyMid} opacity="0.2"/>
-    ))}
-    <path d="M100 40 L120 60" stroke="#f0c040" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M140 30 L140 55" stroke="#f0c040" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M180 40 L160 60" stroke="#f0c040" strokeWidth="2.5" strokeLinecap="round"/>
-    <text x="140" y="170" textAnchor="middle" fill={C.navyMid} fontSize="10" fontFamily={FB} opacity="0.7">Renovatie & verbouw</text>
-  </svg>
-);
-
 /* Project illustrations */
 const IlluProject1 = () => (
   <svg viewBox="0 0 340 200" fill="none" style={{width:"100%",height:"100%"}}>
@@ -673,7 +539,7 @@ function HomePage({ nav }) {
             </p>
             <div style={{ display:"flex", gap:16, flexWrap:"wrap" }}>
               {[{t:"Warmtepompen"},{t:"Airco"},{t:"Sanitair"},{t:"CV-installaties"}].map((s,i)=>(
-                <span key={i} style={{ padding:"6px 14px", background:C.bg, borderRadius:20, fontSize:13, color:C.navy, fontWeight:600, fontFamily:FH, border:\`1px solid \${C.border}\` }}>{s.t}</span>
+                <span key={i} style={{ padding:"6px 14px", background:C.bg, borderRadius:20, fontSize:13, color:C.navy, fontWeight:600, fontFamily:FH, border:`1px solid ${C.border}` }}>{s.t}</span>
               ))}
             </div>
           </div>
