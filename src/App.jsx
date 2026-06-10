@@ -259,8 +259,8 @@ const IlluMedewerkers = () => (
   </svg>
 );
 
-const IlluBusProject = () => (
-  <svg viewBox="0 0 340 200" fill="none" style={{width:"100%",height:"100%"}}>
+const IlluBadkamer = () => (
+    <svg viewBox="0 0 340 200" fill="none" style={{width:"100%",height:"100%"}}>
     <rect width="340" height="200" fill="#f4f7fc"/>
     <rect x="10" y="60" width="260" height="105" rx="8" fill="white" stroke="#e0e0e0" strokeWidth="1.5"/>
     <rect x="10" y="130" width="260" height="35" rx="0" fill="#1B3A6B"/>
@@ -280,6 +280,15 @@ const IlluBusProject = () => (
     <ellipse cx="148" cy="192" rx="145" ry="8" fill="rgba(0,0,0,0.06)"/>
   </svg>
 );
+
+const IlluWarmtepomp = IlluBadkamer;
+const IlluAirco = IlluBadkamer;
+const IlluNieuwbouw = IlluBadkamer;
+const IlluRenovatie = IlluBadkamer;
+const IlluCV = IlluBadkamer;
+const IlluVentilatie = IlluBadkamer;
+const IlluZonnepanelen = IlluBadkamer;
+const IlluBusProject = IlluBus;
 
 /* ── Data ── */
 const DIENSTEN = [
