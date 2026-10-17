@@ -1,16 +1,39 @@
-# React + Vite
+# Hartog-Bos Duurzame Installaties — website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website voor [www.hartog-bosinstallaties.nl](https://www.hartog-bosinstallaties.nl). React + Vite, gehost op Netlify.
 
-Currently, two official plugins are available:
+## Lokaal werken (Command Prompt, niet PowerShell)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```
+npm install
+npm run dev      # http://localhost:5173
+npm run lint     # code-controle
+npm run build    # productie-build in dist/
+```
 
-## React Compiler
+## Waar staat wat?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Wat wil je aanpassen? | Bestand |
+|---|---|
+| Telefoon, e-mail, adres, KVK/BTW, Instagram | `src/config/site.js` |
+| Foto's | `src/data/images.js` (eigen foto's in `public/images/`) |
+| Diensten (tekst, foto, tags) | `src/data/diensten.js` |
+| "Ons werk" / projecten | `src/data/werk.js` |
+| Kenmerken, waarden, over-ons-tekst | `src/data/content.js` |
+| Menu, URL's, paginatitels | `src/data/routes.js` |
+| Kleuren en lettertypen | `src/theme.js` |
+| Pagina-opbouw | `src/pages/` |
+| Herbruikbare onderdelen | `src/components/` |
+| SEO, Google-gegevens, Netlify Forms | `index.html` |
 
-## Expanding the ESLint configuration
+Formuliervelden in `src/components/ContactForm.jsx` moeten gelijk blijven aan de verborgen formulieren in `index.html`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Werkwijze wijzigingen
+
+1. Nieuwe branch: `git checkout -b feature/omschrijving`
+2. Wijzigen, `npm run lint` en `npm run build` controleren
+3. `git push -u origin feature/omschrijving`
+4. Op GitHub een pull request maken → Netlify maakt een preview
+5. Preview goed? Pull request mergen naar `main` → automatisch live
+
+Zie `docs/` voor projectstatus en roadmap.

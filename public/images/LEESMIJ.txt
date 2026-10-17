@@ -1,0 +1,2 @@
+Zet hier eigen foto's (jpg/webp, liefst max. 1600 px breed).
+Koppel ze daarna in src/data/images.js met local("bestandsnaam.jpg", "omschrijving").
