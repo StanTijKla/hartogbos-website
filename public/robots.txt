@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hartog-bosinstallaties.nl/sitemap.xml
+Sitemap: https://hartog-bosinstallaties.nl/sitemap.xml

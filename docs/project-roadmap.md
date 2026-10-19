@@ -4,7 +4,7 @@
 
 - [x] Project aangemaakt (React + Vite)
 - [x] Git ingericht, GitHub gekoppeld (StanTijKla/hartogbos-website)
-- [x] Netlify gekoppeld, eigen domein www.hartog-bosinstallaties.nl
+- [x] Netlify gekoppeld, eigen domein hartog-bosinstallaties.nl (www stuurt door)
 - [x] Netlify Forms (contact en offerte)
 - [x] Projectstructuur verbeterd (componenten, pagina's, data, config)
 - [x] Logo's als losse bestanden in plaats van base64 in de code

@@ -1,6 +1,6 @@
 # Hartog-Bos Duurzame Installaties — website
 
-Website voor [www.hartog-bosinstallaties.nl](https://www.hartog-bosinstallaties.nl). React + Vite, gehost op Netlify.
+Website voor [hartog-bosinstallaties.nl](https://hartog-bosinstallaties.nl). React + Vite, gehost op Netlify.
 
 ## Lokaal werken (Command Prompt, niet PowerShell)
 

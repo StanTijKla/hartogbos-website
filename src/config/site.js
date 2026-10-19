@@ -3,7 +3,7 @@
 export const SITE = {
   name: "Hartog-Bos Duurzame Installaties",
   shortName: "Hartog-Bos",
-  url: "https://www.hartog-bosinstallaties.nl",
+  url: "https://hartog-bosinstallaties.nl",
   email: "info@hartog-bosinstallaties.nl",
   phone: "06 37 16 70 60",
   kvk: null, // bewust leeg: wordt later toegevoegd
