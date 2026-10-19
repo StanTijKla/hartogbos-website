@@ -72,8 +72,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-title { font-size: 36px !important; }
   .section-pad { padding: 48px 20px !important; }
   .hero-pad { padding: 72px 20px 56px !important; }
-  .stats-grid { grid-template-columns: 1fr 1fr !important; }
-  .stats-grid .stat { border-right: none !important; }
+  .stats-grid .stat { padding: 18px 4px !important; }
   .footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
   .page-hero { padding: 60px 20px 48px !important; }
   .contact-grid { grid-template-columns: 1fr !important; }
@@ -87,4 +86,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-btns { flex-direction: column !important; }
   .hero-btns .btn { width: 100% !important; justify-content: center; }
   .grid-2-fixed { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .stats-grid .stat { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .stats-grid .stat:last-child { border-bottom: none; }
 }

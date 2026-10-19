@@ -4,7 +4,6 @@ import { Shield, CheckCircle, Users, Star } from "lucide-react";
 export const STATS = [
   { n: "Regio", l: "Nijmegen & Wijchen" },
   { n: "1", l: "Vast aanspreekpunt" },
-  { n: "24-48u", l: "Reactie op uw aanvraag" },
   { n: "Vrijblijvend", l: "Advies & offerte" },
 ];
 
