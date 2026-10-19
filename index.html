@@ -2,38 +2,42 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hartog-Bos Duurzame Installaties | Specialist Nijmegen</title>
-    <meta name="description" content="Hartog-Bos Installaties — specialist in duurzame installaties in regio Nijmegen. Warmtepompen, badkamers, airco, zonnepanelen en CV. Voor aannemers en particulieren. Bel 06-12345678." />
-    <meta name="keywords" content="installateur Nijmegen, warmtepomp Nijmegen, airco installatie Nijmegen, badkamer renovatie Nijmegen, zonnepanelen Nijmegen, CV installatie, duurzame installaties, Hartog-Bos" />
+    <meta name="theme-color" content="#0D1F3C" />
+    <title>Hartog-Bos Duurzame Installaties | Installateur regio Nijmegen</title>
+    <meta name="description" content="Hartog-Bos Duurzame Installaties uit Wijchen — specialist in duurzame installaties in de regio Nijmegen. Warmtepompen, badkamers, airco, zonnepanelen en CV. Voor aannemers en particulieren." />
     <meta name="author" content="Hartog-Bos Duurzame Installaties" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.hartog-bosinstallaties.nl" />
+    <link rel="canonical" href="https://hartog-bosinstallaties.nl/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.hartog-bosinstallaties.nl" />
-    <meta property="og:title" content="Hartog-Bos Duurzame Installaties | Nijmegen" />
-    <meta property="og:description" content="Specialist in duurzame installaties. Warmtepompen, badkamers, airco, zonnepanelen en CV in regio Nijmegen." />
+    <meta property="og:url" content="https://hartog-bosinstallaties.nl/" />
+    <meta property="og:title" content="Hartog-Bos Duurzame Installaties | Regio Nijmegen" />
+    <meta property="og:description" content="Specialist in duurzame installaties. Warmtepompen, badkamers, airco, zonnepanelen en CV in de regio Nijmegen." />
+    <meta property="og:image" content="https://hartog-bosinstallaties.nl/logo.png" />
     <meta property="og:locale" content="nl_NL" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Hartog-Bos Duurzame Installaties | Nijmegen" />
-    <meta name="twitter:description" content="Specialist in duurzame installaties in regio Nijmegen." />
+    <meta name="twitter:title" content="Hartog-Bos Duurzame Installaties | Regio Nijmegen" />
+    <meta name="twitter:description" content="Specialist in duurzame installaties in de regio Nijmegen." />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "HVACBusiness",
       "name": "Hartog-Bos Duurzame Installaties",
-      "description": "Specialist in duurzame installaties in regio Nijmegen.",
-      "url": "https://www.hartog-bosinstallaties.nl",
-      "telephone": "+31612345678",
+      "description": "Specialist in duurzame installaties in de regio Nijmegen.",
+      "url": "https://hartog-bosinstallaties.nl",
+      "logo": "https://hartog-bosinstallaties.nl/logo.png",
+      "telephone": "+31637167060",
       "email": "info@hartog-bosinstallaties.nl",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Bijsterhuizen Zuid 4019",
-        "postalCode": "6604LW",
+        "postalCode": "6604 LW",
         "addressLocality": "Wijchen",
         "addressCountry": "NL"
       },
+      "areaServed": "Regio Nijmegen",
       "openingHoursSpecification": [{
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
@@ -44,19 +48,25 @@
     </script>
   </head>
   <body>
-    <!-- Netlify Forms detectie: verborgen statische formulieren -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <!-- Netlify Forms: verborgen statische formulieren zodat Netlify de velden herkent.
+         Veldnamen moeten gelijk blijven aan src/components/ContactForm.jsx -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
       <input type="text" name="naam" />
       <input type="tel" name="telefoon" />
+      <input type="email" name="email" />
       <textarea name="bericht"></textarea>
     </form>
 
-    <form name="offerte" netlify netlify-honeypot="bot-field" hidden>
+    <form name="offerte" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
       <input type="text" name="naam" />
       <input type="tel" name="telefoon" />
+      <input type="email" name="email" />
       <textarea name="omschrijving"></textarea>
     </form>
 
+    <noscript>Deze website heeft JavaScript nodig. Mail ons gerust via info@hartog-bosinstallaties.nl.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
